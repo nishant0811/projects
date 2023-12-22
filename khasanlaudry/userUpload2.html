@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Upload</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/userUpload2.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="assets/logo.png" alt="">
+      <div class="right_side">
+        <a href="#">LOGOUT</a>
+        <p>Hello MAX </p>
+        <i class="fas fa-user"></i>
+      </div>
+    </div>
+    <div class="main-body">
+        <div class="dashbord">
+          <div class="sidebar">
+            <div class="title">
+              <h2>MENU</h2>
+            </div>
+            <div class="userProfile" >
+              <div class="leftSide">
+              <i class="far fa-user"></i>
+              <a href="userProfile.html">PROFILE</a>
+            </div>
+            <div class="rightSide">
+              <i class="fal fa-chevron-down" id="arrow" onclick="showDrop()"></i>
+            </div>
+            </div>
+            <div class="userProfile_drop" id="drop">
+              <i class="fas fa-wrench"></i>
+              <a href="userChangePass.html">CHANGE PASSWORD</a>
+            </div>
+            <div class="upload active">
+              <i class="fas fa-arrow-alt-from-top"></i>
+              <a href="userUpload.html">UPLOAD</a>
+            </div>
+            <div class="documents">
+              <i class="fas fa-folder"></i>
+              <a href="userDocument.html">DOCUMENTS</a>
+            </div>
+          </div>
+          <div class="dashboard_content">
+            <p class="heading">Bitte Wählen sie ihr Verwendetes Testdaten-set aus </p>
+            <div class="folders">
+              <p><i class="fas fa-folder"></i> Testdaten-Set 1</p>
+              <p><i class="fas fa-folder"></i> Testdaten-Set 2</p>
+              <p><i class="fas fa-folder"></i> Testdaten-Set 3</p>
+              <p><i class="fas fa-folder"></i> Testdaten-Set 4</p>
+              <p><i class="fas fa-folder"></i> Testdaten-Set 5</p>
+              <p><i class="fas fa-folder"></i> Testdaten-Set 6</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="userSidebar.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Upload</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/adminDocument.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="assets/logo.png" alt="">
+      <div class="right_side">
+        <a href="#">LOGOUT</a>
+        <p>Hello Admin</p>
+        <i class="fas fa-user"></i>
+      </div>
+    </div>
+    <div class="main-body">
+        <div class="dashbord">
+          <div class="sidebar">
+            <div class="title">
+              <h2>MENU</h2>
+            </div>
+            <div class="userProfile" >
+              <div class="leftSide">
+              <i class="far fa-user"></i>
+              <a href="#">USER</a>
+            </div>
+            <div class="rightSide">
+              <i class="fal fa-chevron-down" id="arrow" onclick="showDrop()"></i>
+            </div>
+            </div>
+            <div class="userProfile_drop" id="drop" >
+              <div class="">
+              <i class="fas fa-user-plus"></i>
+              <a href="adminAddNewUser.html">Add New User</a>
+              </div>
+              <div class="">
+            <i class="fas fa-user"></i>
+            <a href="adminShowAllUser.html">Show All User</a>
+            </div>
+            </div>
+            <div class="upload">
+              <i class="fas fa-arrow-alt-from-top"></i>
+              <a href="adminUpload.html">UPLOAD</a>
+            </div>
+            <div class="documents active">
+              <i class="fas fa-folder"></i>
+              <a href="adminDocument.html">DOCUMENTS</a>
+            </div>
+          </div>
+          <div class="dashboard_content">
+            <div class="folders">
+              <p><i class="fas fa-folder"></i> ERGEBNIS</p>
+              <p class="left"><i class="fas fa-folder"></i> EQA-ERGEBNIS1.csv <i class="fas fa-arrow-to-bottom"></i> <i class="fas fa-chart-bar"></i></p>
+              <p><i class="fas fa-folder"></i> Testdaten-Sets   <i class="fal fa-chevron-down" id="arrow2" onclick="showSets()"></i></p>
+              <div class="sets" id="sets">
+              <p><i class="fas fa-folder"></i> Testdaten-Set 1 <i class="fal fa-chevron-down" ></i></p>
+              <p><i class="fas fa-folder"></i> Testdaten-Set 2 <i class="fal fa-chevron-down" ></i></p>
+              <p><i class="fas fa-folder"></i> Testdaten-Set 3 <i class="fal fa-chevron-down" ></i></p>
+              <p><i class="fas fa-folder"></i> Testdaten-Set 4 <i class="fal fa-chevron-down" id="arrow3" onclick="openSets()" ></i></p>
+              <div class="indiSet" id="indiSet">
+                <p><i class="fal fa-folder"></i> 4_R1.fastq</p>
+                <p><i class="fal fa-folder"></i> 4_R2.fastq</p>
+                <p><i class="fal fa-folder"></i> Koordinaten.bed</p>
+                <p><i class="fal fa-folder"></i> Ground_Truth.vcf</p>
+              </div>
+              <p><i class="fas fa-folder"></i> Testdaten-Set 5 <i class="fal fa-chevron-down" ></i></p>
+              <p><i class="fas fa-folder"></i> Testdaten-Set 6 <i class="fal fa-chevron-down" ></i></p>
+
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="userSidebar.js" charset="utf-8"></script>
+    <script src="adminDocument.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      showSets();
+      openSets();
+    </script>
+  </body>
+</html>

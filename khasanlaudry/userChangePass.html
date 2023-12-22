@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Upload</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/userChangePass.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="assets/logo.png" alt="">
+      <div class="right_side">
+        <a href="#">LOGOUT</a>
+        <p>Hello MAX </p>
+        <i class="fas fa-user"></i>
+      </div>
+    </div>
+    <div class="main-body">
+        <div class="dashbord">
+          <div class="sidebar">
+            <div class="title">
+              <h2>MENU</h2>
+            </div>
+            <div class="userProfile" >
+              <div class="leftSide">
+              <i class="far fa-user"></i>
+              <a href="userProfile.html">PROFILE</a>
+            </div>
+            <div class="rightSide">
+              <i class="fal fa-chevron-down active" id="arrow" onclick="showDrop()"></i>
+            </div>
+            </div>
+            <div class="userProfile_drop active" id="drop" style="max-height: 22px; margin: 8px 40px; padding : 16px;">
+              <i class="fas fa-wrench"></i>
+              <a href="userChangePass.html">CHANGE PASSWORD</a>
+            </div>
+            <div class="upload">
+              <i class="fas fa-arrow-alt-from-top"></i>
+              <a href="userUpload.html">UPLOAD</a>
+            </div>
+            <div class="documents">
+              <i class="fas fa-folder"></i>
+              <a href="userDocument.html">DOCUMENTS</a>
+            </div>
+          </div>
+          <div class="dashboard_content">
+            <div class="upload_container">
+              <div class="input">
+                <div class="password">
+                  <i class="far fa-lock"></i>
+                  <input type="text" name="" value="" placeholder="OLD PASSWORD">
+                </div>
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="input">
+                <div class="password">
+                  <i class="far fa-lock"></i>
+                  <input type="text" name="" value="" placeholder="NEW PASSWORD">
+                </div>
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="input">
+                <div class="password">
+                  <i class="far fa-lock"></i>
+                  <input type="text" name="" value="" placeholder="CONFIRM PASSWORD">
+                </div>
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="seperator">
+
+              </div>
+              <a href="#">CHANGE</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="userSidebar.js" charset="utf-8"></script>
+  </body>
+</html>

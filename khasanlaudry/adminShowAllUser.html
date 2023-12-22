@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Upload</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/adminShowAllUser.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="assets/logo.png" alt="">
+      <div class="right_side">
+        <a href="#">LOGOUT</a>
+        <p>Hello Admin</p>
+        <i class="fas fa-user"></i>
+      </div>
+    </div>
+    <div class="main-body">
+        <div class="dashbord">
+          <div class="sidebar">
+            <div class="title">
+              <h2>MENU</h2>
+            </div>
+            <div class="userProfile" >
+              <div class="leftSide">
+              <i class="far fa-user"></i>
+              <a href="#">USER</a>
+            </div>
+            <div class="rightSide">
+              <i class="fal fa-chevron-down" id="arrow" onclick="showDrop()"></i>
+            </div>
+            </div>
+            <div class="userProfile_drop" id="drop" >
+              <div class="">
+              <i class="fas fa-user-plus"></i>
+              <a href="adminAddNewUser.html">Add New User</a>
+              </div>
+              <div class="active">
+            <i class="fas fa-user"></i>
+            <a href="adminShowAllUser.html">Show All User</a>
+            </div>
+            </div>
+            <div class="upload">
+              <i class="fas fa-arrow-alt-from-top"></i>
+              <a href="adminUpload.html">UPLOAD</a>
+            </div>
+            <div class="documents">
+              <i class="fas fa-folder"></i>
+              <a href="adminDocument.html">DOCUMENTS</a>
+            </div>
+          </div>
+          <div class="dashboard_content">
+            <div class="ttable">
+              <table class="table">
+                <thead>
+                  <tr class="header">
+                    <th scope="col">UserID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email Address</th>
+                    <th scope="col">Standort</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>Audrey Mckinney</td>
+                    <td>lisa.watson@example.com</td>
+                    <td>Mannheim</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Savannah Howard</td>
+                    <td>jeff.brown@example.com</td>
+                    <td>Marburg</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Morris Cooper</td>
+                    <td>terra.hamilton@example.com</td>
+                    <td>Magdeburg</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Victoria Lane</td>
+                    <td>deanna.curtis@example.com</td>
+                    <td>Giessen</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Stella Warren</td>
+                    <td>keith.richard@example.com</td>
+                    <td>Freiburg</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Max Alexander</td>
+                    <td>max.terry@example.com</td>
+                    <td>Frankfurt</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Guy Richards</td>
+                    <td>renee.hughes@example.com</td>
+                    <td>Mainz</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">0</th>
+                    <td>Kyle Murphy</td>
+                    <td>alexa.matthews@example.com</td>
+                    <td>Heidelberg</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Morris Bell</td>
+                    <td>donald.phillips@example.com</td>
+                    <td>Giessen</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Jacob Black</td>
+                    <td>jeff.anderson@example.com</td>
+                    <td>Frankfurt</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>Arlene Steward</td>
+                    <td>kenzi.lawson@example.com</td>
+                    <td>Mannheim</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="adminSidebar.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      showDrop();
+    </script>
+  </body>
+</html>

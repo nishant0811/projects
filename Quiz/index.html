@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+
+    <div class="start" id="start">
+      <h1>Your Quiz</h1>
+      <button type="button" name="button" class="startBut" onclick="showQuestions()">Start Your Quiz</button>
+    </div>
+    <div class="quiz" id="ques1">
+      <h1 id="quest1">Your Question</h1>
+      <form class="" >
+      <input type="text" name="answer" value="" placeholder="Your Answer" class="answer" autocomplete="off" autofocus>
+      <button type="submit" name="button" class="next startBut">Next Question</button>
+    </form>
+    </div>
+    <div class="quiz1" id="ques2">
+      <h1 id="quest2">Your Question</h1>
+      <form class="">
+      <input type="text" name="answer" value="" placeholder="Your Answer" class="answer" autocomplete="off" autofocus>
+      <button type="submit" name="button" class="next startBut">Next Question</button>
+      </form>
+    </div>
+    <div class="result" id="results">
+      <h1>You Scored </h1>
+      <h1 id="score"></h1>
+      <button type="button" name="button" class="next startBut" onclick="restart()">Restart Quiz</button>
+    </div>
+  </div>
+  <p id="time" class="time"></p>
+  <div class="popup" id="popup">
+    <h1>Oops....Time Up!!</h1>
+    <img src="cartoon.png" alt="">
+    <button type="button" name="button" class="startBut" onclick="showResult()">Show Result</button>
+  </div>
+  <div class="contantMe">
+    <p>This Quiz was made by Nishant Raj</p>
+    <p>Wanna Get a custom quiz for yourself? Conact me <a href="https://www.fiverr.com/nishant08111" target="_blank">Here</a> </p>
+  </div>
+  <audio src="pop.wav" type="audio/wav" id="audio"></audio>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/easytimer.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+
+  </body>
+</html>
